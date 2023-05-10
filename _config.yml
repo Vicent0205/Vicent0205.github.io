@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "junteng"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "junteng liu (刘军腾)"
-  avatar           : "profile.jpg"
+  avatar           : "profile.png"
   bio              : "third-year student in SJTU"
   location         : "Location"
   employer         :

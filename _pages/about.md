@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "junteng liu's homepage"
+title: "Junteng Liu's homepage"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm a third year student in [SJTU (shanghai jiaotong university)](https://en.sjtu.edu.cn/). I'm fortunate to be advised by Prof.[junxianhe](https://jxhe.github.io/). I am interested in natural language processing and machine learning.  
+Hi! I'm a third year student in [SJTU (Shanghai Jiaotong university)](https://en.sjtu.edu.cn/). I'm fortunate to be advised by Prof.[junxianhe](https://jxhe.github.io/). I am interested in natural language processing and machine learning.  
 
 Publication
 ======

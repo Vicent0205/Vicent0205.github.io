@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm a third year student in [SJTU (Shanghai Jiaotong university)](https://en.sjtu.edu.cn/). I'm fortunate to be advised by Prof.[junxianhe](https://jxhe.github.io/). I am interested in natural language processing and machine learning.  
+Hi! I'm a third year student in [SJTU (Shanghai Jiaotong university)](https://en.sjtu.edu.cn/). I'm fortunate to be advised by Prof.[Junxian He](https://jxhe.github.io/). I am interested in natural language processing and machine learning.  
 
 Publication
 ======

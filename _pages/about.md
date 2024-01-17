@@ -8,7 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm a final year undergrad in [SJTU (Shanghai Jiaotong university)](https://en.sjtu.edu.cn/). I'm fortunate to be advised by Prof.[Junxian He](https://jxhe.github.io/) and Prof. Yu Cheng. I am interested in natural language processing and machine learning.  Currently, I am focused on Hallucination and truthfulness of LLM.
+Hi! I'm a final year undergrad in [SJTU (Shanghai Jiaotong university)](https://en.sjtu.edu.cn/). Currently, I'm fortunate to be advised by Prof.[Junxian He](https://jxhe.github.io/) and Prof. [Yu Cheng](https://ych133.github.io/). I am also an incoming PHD at [HKUST NLP](https://github.com/hkust-nlp) supervised by Junxian He!
+I am broadly interested in natural language processing and machine learning.  Currently, I am focused on Hallucination and truthfulness of LLM.
 
 Publication
 ======

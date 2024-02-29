@@ -8,10 +8,15 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm a final year undergrad in [SJTU (Shanghai Jiaotong university)](https://en.sjtu.edu.cn/). I'm fortunate to be advised by Prof.[Junxian He](https://jxhe.github.io/) and Prof. [Yu Cheng](https://ych133.github.io/). I am also an incoming PHD at [HKUST NLP](https://github.com/hkust-nlp) supervised by Junxian He!
+Hi! I'm a senior undergrad in [SJTU (Shanghai Jiaotong university)](https://en.sjtu.edu.cn/). I'm fortunate to be advised by Prof. [Junxian He](https://jxhe.github.io/).
+I am also an incoming PHD at [HKUST NLP](https://github.com/hkust-nlp) supervised by Junxian He!
 
 
-I am broadly interested in natural language processing and machine learning.  Currently, I am focused on Hallucination and truthfulness of LLM.
+I am broadly interested in natural language processing and machine learning.  Currently, I am focused on Hallucination and truthfulness of LLM from interpretability perspective.
+
+Experience
+======
+2023.6-2023.12 Internship in ShanghaiAI Lab advised by Prof. [Yu Cheng](https://ych133.github.io/).
 
 Publication
 ======
@@ -26,6 +31,8 @@ Jinghan Zhang, Shiqi Chen, **Junteng Liu**, Junxian He
 
 Award
 ======
+
+Zhiyuan Honor Sholarship
 
 
 

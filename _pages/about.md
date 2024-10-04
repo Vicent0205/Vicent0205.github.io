@@ -26,7 +26,9 @@ Publication
 
 [On the Universal Truthfulness Hyperplane Inside LLMs](https://arxiv.org/abs/2407.08582)
 
-**Junteng Liu**, Shiqi Chen, Yu Cheng, Junxian He   (Accepted by **EMNLP 2024 main**)
+**Junteng Liu**, Shiqi Chen, Yu Cheng, Junxian He   (Accepted by **EMNLP 2024 main**) 
+
+[**Github Code**](https://github.com/hkust-nlp/Universal_Truthfulness_Hyperplane)
 
 [In-Context Sharpness as Alerts: An Inner Representation Perspective for Hallucination Mitigation](https://arxiv.org/abs/2403.01548)
 

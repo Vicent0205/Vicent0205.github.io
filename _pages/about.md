@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Junteng Liu's homepage"
+title: "Junteng Liu"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,44 +8,67 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I graduated from [SJTU (Shanghai Jiaotong University)](https://en.sjtu.edu.cn/) in 2024.6. I'm fortunate to be advised by Prof. [Junxian He](https://jxhe.github.io/) during my undergraduate period.
-I am also a first year PhD candidate at [HKUST NLP](https://github.com/hkust-nlp) supervised by Junxian He!
+# About Me
 
+I am a first-year PhD candidate at [HKUST NLP Group](https://github.com/hkust-nlp) supervised by Professor [Junxian He](https://jxhe.github.io/). I graduated from [Shanghai Jiao Tong University (SJTU)](https://en.sjtu.edu.cn/) in June 2024, where I was also fortunate to be advised by Prof. Junxian He during my undergraduate studies.
 
-I am broadly interested in natural language processing and machine learning.  Currently, I am focused on 
+## Research Interests
 
-* Hallucination in VLM
-* Hallucination and truthfulness of LLM from an interpretability perspective.
+My research focuses on natural language processing and machine learning, with particular emphasis on:
 
-Experience
-======
-2023.6-2023.12 Internship in ShanghaiAI Lab advised by Prof. [Yu Cheng](https://ych133.github.io/).
+- **LLM Reasoning and Reinforcement Learning**
+- **Hallucination in Vision-Language Models (VLM)**
+- **LLM truthfulness and Interpretability**
 
-Publication
-======
+## Education
 
-[On the Universal Truthfulness Hyperplane Inside LLMs](https://arxiv.org/abs/2407.08582)
+- **Ph.D. in Computer Science** (2024-Present)  
+  Hong Kong University of Science and Technology
+  
+- **B.Eng.** (2020-2024)  
+  Shanghai Jiao Tong University
 
-**Junteng Liu**, Shiqi Chen, Yu Cheng, Junxian He   (Accepted by **EMNLP 2024 main**) 
+## Experience
 
-[**Github Code**](https://github.com/hkust-nlp/Universal_Truthfulness_Hyperplane)
+- **Research Intern** (February 2025 - Present)  
+  MINIMAX 
+  
+- **Research Intern** (June 2024 - September 2024)  
+  Tencent WXG  
+  *Advisor: [Zifei Shan](http://www.zifeishan.org/)*
+  
+- **Research Intern** (June 2023 - December 2023)  
+  Shanghai AI Lab  
+  *Advisor: Prof. [Yu Cheng](https://ych133.github.io/)*
 
-[In-Context Sharpness as Alerts: An Inner Representation Perspective for Hallucination Mitigation](https://arxiv.org/abs/2403.01548)
+## Publications
 
-Shiqi Chen, Miao Xiong, **Junteng Liu**, Zhengxuan Wu, Teng Xiao, Siyang Gao, Junxian He (Accepted by **ICML 2024**)
+### 2024
 
-[C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models](https://arxiv.org/abs/2305.08322)
+- **[On the Universal Truthfulness Hyperplane Inside LLMs](https://arxiv.org/abs/2407.08582)**  
+  **Junteng Liu**, Shiqi Chen, Yu Cheng, Junxian He  
+  *Conference on Empirical Methods in Natural Language Processing (**EMNLP 2024**)*  
+  [<i class="fab fa-github"></i> Code](https://github.com/hkust-nlp/Universal_Truthfulness_Hyperplane)
 
-Yuzhen Huang, Yuzhuo Bai, Zhihao Zhu, Junlei Zhang, Jinghan Zhang, Tangjun Su, **Junteng Liu**, Chuancheng Lv, Yikai Zhang, Jiayi Lei, Yao Fu, Maosong Sun, Junxian He    (Accepted by **NeurIPS 2023**)
+- **[In-Context Sharpness as Alerts: An Inner Representation Perspective for Hallucination Mitigation](https://arxiv.org/abs/2403.01548)**  
+  Shiqi Chen, Miao Xiong, **Junteng Liu**, Zhengxuan Wu, Teng Xiao, Siyang Gao, Junxian He  
+  *International Conference on Machine Learning (**ICML 2024**)*
 
-[Composing Parameter-Efficient Modules with Arithmetic Operations](https://arxiv.org/abs/2306.14870)
+### 2023
 
-Jinghan Zhang, Shiqi Chen, **Junteng Liu**, Junxian He (Accepted by **NeurIPS 2023**)
+- **[C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models](https://arxiv.org/abs/2305.08322)**  
+  Yuzhen Huang, Yuzhuo Bai, Zhihao Zhu, Junlei Zhang, Jinghan Zhang, Tangjun Su, **Junteng Liu**, Chuancheng Lv, Yikai Zhang, Jiayi Lei, Yao Fu, Maosong Sun, Junxian He  
+  *Neural Information Processing Systems (**NeurIPS 2023**)*
 
-Award
-======
+- **[Composing Parameter-Efficient Modules with Arithmetic Operations](https://arxiv.org/abs/2306.14870)**  
+  Jinghan Zhang, Shiqi Chen, **Junteng Liu**, Junxian He  
+  *Neural Information Processing Systems (**NeurIPS 2023**)*
 
-Zhiyuan Honor Scholarship
+## Honors & Awards
 
+- **Zhiyuan Honor Scholarship**, Shanghai Jiao Tong University
 
+## Contact
 
+- **Email**: [jliugi@connect.ust.hk]
+- **GitHub**: [Vicent0205](https://github.com/Vicent0205)

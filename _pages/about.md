@@ -43,6 +43,14 @@ My research focuses on natural language processing and machine learning, with pa
 
 ## Publications
 
+### 2025
+
+- **[On the Perception Bottleneck of VLMs for Chart Understanding](https://arxiv.org/abs/2503.18435)**  
+  **Junteng Liu**, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He 
+  *(**Arxiv**)*  
+  [<i class="fab fa-github"></i> Code](https://github.com/hkust-nlp/Vision4Chart)
+
+
 ### 2024
 
 - **[On the Universal Truthfulness Hyperplane Inside LLMs](https://arxiv.org/abs/2407.08582)**  

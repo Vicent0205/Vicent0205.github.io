@@ -8,17 +8,19 @@ redirect_from:
   - /about.html
 ---
 
+
 # About Me
 
-I am a first-year PhD candidate at [HKUST NLP Group](https://github.com/hkust-nlp) supervised by Professor [Junxian He](https://jxhe.github.io/). I graduated from [Shanghai Jiao Tong University (SJTU)](https://en.sjtu.edu.cn/) in June 2024, where I was also fortunate to be advised by Prof. Junxian He during my undergraduate studies.
+I am a second-year PhD candidate at [HKUST NLP Group](https://github.com/hkust-nlp) supervised by Professor [Junxian He](https://jxhe.github.io/). I graduated from [Shanghai Jiao Tong University (SJTU)](https://en.sjtu.edu.cn/) in June 2024, where I was also fortunate to be advised by Prof. Junxian He during my undergraduate studies.
 
 ## Research Interests
 
 My research focuses on natural language processing and machine learning, with particular emphasis on:
 
-- **LLM Reasoning and Reinforcement Learning**
-- **Hallucination in Vision-Language Models (VLM)**
-- **LLM truthfulness and Interpretability**
+- **Agentic LLM & Long-Horizon Reasoning**: Developing long-horizon reasoning web agents
+- **Logical Reasoning & Reinforcement Learning**: Exploring reinforcement learning on verifiable logical reasoning data
+- **Vision-Language Models**: Investigating perception bottlenecks and hallucination issues in LVLMs (How does ViT ability affect the LVLMs?)
+- **LLM Truthfulness & Interpretability**: Understanding the internal mechanisms of truthfulness in large language models
 
 ## Education
 
@@ -45,6 +47,11 @@ My research focuses on natural language processing and machine learning, with pa
 
 ### 2025
 
+- **[WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents](https://arxiv.org/abs/2509.06501)**  
+**Junteng Liu***, Yunji Li*, Chi Zhang, Jingyang Li, Aili Chen, Ke Ji, Weiyu Cheng, Zijia Wu, Chengyu Du, Qidi Xu, Jiayuan Song, Zhengmao Zhu, Wenhu Chen, Pengyu Zhao, Junxian He
+  *(**Arxiv**)*  
+  [<i class="fab fa-github"></i> Code](https://github.com/hkust-nlp/WebExplorer)
+  
 - **[SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond](https://arxiv.org/abs/2505.19641)**  
  **Junteng Liu**, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He
   *(**Arxiv**)*  
@@ -52,7 +59,7 @@ My research focuses on natural language processing and machine learning, with pa
   
 - **[On the Perception Bottleneck of VLMs for Chart Understanding](https://arxiv.org/abs/2503.18435)**  
   **Junteng Liu**, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He 
-  *(**Arxiv**)*  
+  *(**EMNLP 2025 Findings**)*  
   [<i class="fab fa-github"></i> Code](https://github.com/hkust-nlp/Vision4Chart)
 
 

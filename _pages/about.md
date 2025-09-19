@@ -54,7 +54,7 @@ My research focuses on natural language processing and machine learning, with pa
   
 - **[SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond](https://arxiv.org/abs/2505.19641)**  
  **Junteng Liu**, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He
-  *(**Arxiv**)*  
+  *(**NeurIPS 2025**)*  
   [<i class="fab fa-github"></i> Code](https://github.com/MiniMax-AI/SynLogic)
   
 - **[On the Perception Bottleneck of VLMs for Chart Understanding](https://arxiv.org/abs/2503.18435)**  

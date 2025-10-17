@@ -33,7 +33,7 @@ My research focuses on natural language processing and machine learning, with pa
 ## Experience
 
 - **Research Intern** (February 2025 - Present)  
-  MINIMAX 
+  MiniMax 
   
 - **Research Intern** (June 2024 - September 2024)  
   Tencent WXG  
@@ -62,6 +62,8 @@ My research focuses on natural language processing and machine learning, with pa
   *(**EMNLP 2025 Findings**)*  
   [<i class="fab fa-github"></i> Code](https://github.com/hkust-nlp/Vision4Chart)
 
+- **[MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention](https://arxiv.org/abs/2506.13585)**
+  *(**Tech Report**)*
 
 ### 2024
 

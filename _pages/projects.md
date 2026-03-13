@@ -3,8 +3,8 @@ layout: page
 title: projects
 permalink: /projects/
 description: Selected research projects and papers.
-nav: true
-nav_order: 3
+nav: false
+nav_order: 99
 horizontal: false
 ---
 

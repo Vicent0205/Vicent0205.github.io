@@ -4,7 +4,7 @@ title: about
 permalink: /
 nav: true
 nav_order: 1
-subtitle: Ph.D. Candidate, HKUST NLP Group
+subtitle: Ph.D. Candidate at HKUST NLP Group
 
 profile:
   align: right

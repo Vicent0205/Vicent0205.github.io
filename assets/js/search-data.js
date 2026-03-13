@@ -4,13 +4,13 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-about",
-          title: "about",
+          title: "About",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -60,6 +60,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-our-paper-webexplorer-was-released-on-arxiv-for-long-horizon-web-agent-training",
           title: 'Our paper WebExplorer was released on arXiv for long-horizon web-agent training.',
+          description: "",
+          section: "News",},{id: "news-our-paper-on-the-perception-bottleneck-of-vlms-for-chart-understanding-was-accepted-to-emnlp-2025-findings",
+          title: 'Our paper On the Perception Bottleneck of VLMs for Chart Understanding was accepted...',
           description: "",
           section: "News",},{id: "projects-webexplorer",
           title: 'WebExplorer',

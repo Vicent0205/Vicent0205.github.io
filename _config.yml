@@ -228,6 +228,7 @@ keep_files:
 # Plug-ins
 plugins:
   - jekyll-toc
+  - jekyll/scholar
 
 # Sitemap settings
 defaults:

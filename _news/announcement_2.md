@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**SynLogic** was accepted to **NeurIPS 2025**.
+**[SynLogic](https://arxiv.org/abs/2505.19641)** was accepted to **NeurIPS 2025**.

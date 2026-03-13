@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper on universal truthfulness hyperplanes in LLMs was presented at **EMNLP 2024**.
+Our paper **[On the Universal Truthfulness Hyperplane Inside LLMs](https://arxiv.org/abs/2407.08582)** was presented at **EMNLP 2024**.

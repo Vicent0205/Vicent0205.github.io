@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper **WebExplorer** was released on arXiv for long-horizon web-agent training.
+Our paper **[WebExplorer](https://arxiv.org/abs/2509.06501)** was released on arXiv for long-horizon web-agent training.

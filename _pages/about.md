@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 nav: true
 nav_order: 1
@@ -35,6 +35,6 @@ My research focuses on natural language processing and machine learning, with an
 - Vision-language models and perception bottlenecks
 - LLM truthfulness and interpretability
 
-Before starting my Ph.D., I worked as a research intern at Tencent WXG and Shanghai AI Lab. I am also a research intern at MiniMax.
+Before starting my Ph.D., I worked as a research intern at Tencent WXG and Shanghai AI Lab. I was a research intern at MiniMax from February 2025 to February 2026.
 
 I am broadly interested in building trustworthy and capable reasoning systems.

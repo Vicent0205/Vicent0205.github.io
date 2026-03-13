@@ -230,6 +230,7 @@ keep_files:
 plugins:
   - jekyll-toc
   - jekyll-socials
+  - jekyll-cache-bust
 
 # Sitemap settings
 defaults:

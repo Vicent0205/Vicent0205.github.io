@@ -1,4 +1,5 @@
 name: Deploy site
+# trigger: plugin cleanup deploy rerun
 
 on:
   push:

@@ -28,6 +28,9 @@ latest_posts:
 
 I am a second-year Ph.D. candidate at [HKUST NLP Group](https://github.com/hkust-nlp), advised by Professor [Junxian He](https://jxhe.github.io/). I received my B.Eng. from [Shanghai Jiao Tong University (SJTU)](https://en.sjtu.edu.cn/) in 2024.
 
+Google Scholar: [tbK9jl4AAAAJ](https://scholar.google.com/citations?user=tbK9jl4AAAAJ)  
+Twitter/X: [@junteng88716710](https://twitter.com/junteng88716710)
+
 My research focuses on natural language processing and machine learning, with an emphasis on:
 
 - Agentic LLMs and long-horizon reasoning

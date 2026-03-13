@@ -76,10 +76,10 @@ jobs:
         with:
           ruby-version: "3.3.5"
           bundler: 2.6.9
-          bundler-cache: true
       - name: Install and Build 🔧
         run: |
           export JEKYLL_ENV=production
+          bundle install
           bundle exec jekyll build --trace
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'

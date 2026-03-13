@@ -23,13 +23,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "Selected research projects and papers.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
         },{id: "nav-news",
           title: "news",
           description: "",
@@ -55,14 +48,14 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-on-universal-truthfulness-hyperplanes-in-llms-was-presented-at-emnlp-2024",
           title: 'Our paper on universal truthfulness hyperplanes in LLMs was presented at EMNLP 2024....',
           description: "",
+          section: "News",},{id: "news-our-paper-on-the-perception-bottleneck-of-vlms-for-chart-understanding-was-accepted-to-emnlp-2025-findings",
+          title: 'Our paper On the Perception Bottleneck of VLMs for Chart Understanding was accepted...',
+          description: "",
           section: "News",},{id: "news-synlogic-was-accepted-to-neurips-2025",
           title: 'SynLogic was accepted to NeurIPS 2025.',
           description: "",
           section: "News",},{id: "news-our-paper-webexplorer-was-released-on-arxiv-for-long-horizon-web-agent-training",
           title: 'Our paper WebExplorer was released on arXiv for long-horizon web-agent training.',
-          description: "",
-          section: "News",},{id: "news-our-paper-on-the-perception-bottleneck-of-vlms-for-chart-understanding-was-accepted-to-emnlp-2025-findings",
-          title: 'Our paper On the Perception Bottleneck of VLMs for Chart Understanding was accepted...',
           description: "",
           section: "News",},{id: "projects-webexplorer",
           title: 'WebExplorer',

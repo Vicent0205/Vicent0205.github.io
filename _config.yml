@@ -226,7 +226,8 @@ keep_files:
   - .nojekyll
 
 # Plug-ins
-plugins: []
+plugins:
+  - jekyll-toc
 
 # Sitemap settings
 defaults:

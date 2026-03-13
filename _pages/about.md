@@ -14,7 +14,7 @@ profile:
     <p>Hong Kong University of Science and Technology</p>
     <p>Clear Water Bay, Hong Kong</p>
 
-selected_papers: true
+selected_papers: false
 social: true
 
 announcements:

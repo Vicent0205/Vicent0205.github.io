@@ -210,6 +210,7 @@ exclude:
   - _pages/teaching.html
   - _pages/terms.md
   - _pages/year-archive.html
+  - _posts/
   - _portfolio/
   - _publications/
   - _talks/
@@ -228,7 +229,7 @@ keep_files:
 # Plug-ins
 plugins:
   - jekyll-toc
-  - jekyll/scholar
+  - jekyll-socials
 
 # Sitemap settings
 defaults:

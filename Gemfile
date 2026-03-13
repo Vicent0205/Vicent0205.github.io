@@ -2,6 +2,6 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 gem 'jekyll-toc'
-gem 'jekyll-scholar'
+gem 'jekyll-socials'
 gem 'feedjira'
 gem 'httparty'

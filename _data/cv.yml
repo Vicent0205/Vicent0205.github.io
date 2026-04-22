@@ -29,6 +29,14 @@ cv:
         end_date: 2024
 
     Experience:
+      - company: Apple MLR
+        position: Research Intern
+        location: Cupertino, CA
+        start_date: 2026-04
+        end_date: Present
+        highlights:
+          - Mentored by Yizhe Zhang.
+
       - company: MiniMax
         position: Research Intern
         location: Shanghai, China

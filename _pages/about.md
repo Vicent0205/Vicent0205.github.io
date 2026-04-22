@@ -35,7 +35,7 @@ My research focuses on natural language processing and machine learning, with an
 - Vision-language models and perception bottlenecks
 - LLM truthfulness and interpretability
 
-Before starting my Ph.D., I worked as a research intern at Tencent WXG and Shanghai AI Lab. I was a research intern at MiniMax from February 2025 to February 2026, contributing to the MiniMax M1 and M2.x models.
+I am currently a research intern at **Apple MLR** (Cupertino), mentored by [Yizhe Zhang](https://yizhezhang.com/). Previously, I interned at MiniMax (contributing to the M1 and M2.x models), Tencent WXG, and Shanghai AI Lab.
 
 I am broadly interested in building trustworthy and capable reasoning systems.
 

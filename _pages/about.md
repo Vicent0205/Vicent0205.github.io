@@ -35,7 +35,7 @@ My research focuses on natural language processing and machine learning, with an
 - Vision-language models and perception bottlenecks
 - LLM truthfulness and interpretability
 
-I am currently a research intern at **Apple MLR** (Cupertino), mentored by [Yizhe Zhang](https://yizhezhang.com/). Previously, I interned at MiniMax (contributing to the M1 and M2.x models), Tencent WXG, and Shanghai AI Lab.
+I am currently a research intern at **Apple MLR** (Cupertino), mentored by [Yizhe Zhang](https://dreasysnail.github.io/). Previously, I interned at MiniMax (contributing to the M1 and M2.x models), Tencent WXG, and Shanghai AI Lab.
 
 I am broadly interested in building trustworthy and capable reasoning systems.
 

@@ -1,80 +1,168 @@
 cv:
   name: Junteng Liu
-  label: Ph.D. Candidate
+  label: Third-year Ph.D. Student
   email: jliugi@connect.ust.hk
   location: Hong Kong
   image: ""
-  summary: Ph.D. candidate at HKUST NLP Group working on reasoning-capable and trustworthy language models.
-
+  summary:
+    Third-year Ph.D. student at HKUST NLP Group studying recursive self-improvement (RSI) and coding agents for long-horizon AI development, with verifiable
+    feedback and reinforcement learning for logical reasoning, search, and inference systems.
   social_networks:
     - network: GitHub
       username: Vicent0205
     - network: X
       username: junteng88716710
-
   sections:
     Education:
       - institution: Hong Kong University of Science and Technology
         location: Hong Kong
-        area: Computer Science and Engineering
+        area: Computer Science
         studyType: Ph.D.
         start_date: 2024
         end_date: Present
-
+        highlights:
+          - "HKUST NLP Group; advisor: Prof. Junxian He."
       - institution: Shanghai Jiao Tong University
         location: Shanghai, China
         area: Automation (IEEE Honor Class)
         studyType: B.Eng.
         start_date: 2020
         end_date: 2024
-
     Experience:
       - company: Apple MLR
-        position: Research Intern
-        location: Cupertino, CA
+        position: Research Scientist Intern
+        location: Cupertino, USA
         start_date: 2026-04
-        end_date: Present
+        end_date: 2026-09
         highlights:
-          - Mentored by Yizhe Zhang.
-
+          - Mentored by [Yizhe Zhang](https://scholar.google.com/citations?user=WDVMfggAAAAJ) and [Ruixiang Zhang](https://scholar.google.com/citations?user=VQYdApgAAAAJ).
+          - Developed **RSI-Inference** (working paper, first author), a benchmark for evaluating whether coding agents can autonomously develop and maintain
+            **vLLM and SGLang** in GPU-backed sandboxes.
+          - "**Model support:** Native integration of previously unsupported architectures (e.g., DeepSeek-V4), evaluated through correctness and serving-feature
+            checks."
+          - "**Optimization:** Source-code changes to accelerate models already supported by the engine, measuring throughput and latency under fixed deployment
+            settings on H100 and B200 GPUs."
+          - In the reported evaluation snapshot, Sonnet-5.5 and Opus-5.5 led the overall ranking, with optimization speedups of **1.68× and 1.48×** and model-support pass@1 of **27.8% and 16.7%**,
+            respectively. DeepSeek-V4.1-Flash achieved **0.0%** support pass@1 and **1.24×** speedup.
       - company: MiniMax
         position: Research Intern
         location: Shanghai, China
         start_date: 2025-02
         end_date: 2026-02
         highlights:
-          - Worked on large-scale logical reasoning data synthesis and training.
-
+          - Core contributor to MiniMax-M1 and MiniMax-M2.
+          - "**Logical reasoning:** Developed [**SynLogic**](https://arxiv.org/abs/2505.19641) (first author, NeurIPS 2025), synthesizing rule-verifiable data
+            across 35 logical task types for RL with verifiable rewards. SynLogic-32B outperformed DeepSeek-R1-Distill-Qwen-32B on BBEH (**25.5% vs. 19.2%**).
+            This data and RL work contributed to **MiniMax-M1**."
+          - "**Search agents:** Developed [**WebExplorer**](https://arxiv.org/abs/2509.06501) (first author), synthesizing challenging search tasks through
+            web exploration and query evolution, and explored RL training. WebExplorer-8B surpassed WebSailor-72B on BrowseComp-en/zh (Avg@4: **15.7% vs. 12.0%
+            / 32.0% vs. 30.1%**). The data was used in **MiniMax-M2** and formed the basis for subsequent **MiniMax-M3** search-data improvements."
       - company: Tencent WXG
         position: Research Intern
-        location: Shenzhen, China
+        location: Shanghai, China
         start_date: 2024-06
         end_date: 2024-09
         highlights:
-          - Studied perception bottlenecks in vision-language models for chart understanding.
-
+          - Mentored by Zifei Shan.
+          - "Investigated vision-encoder bottlenecks in VLM chart understanding and trained improved encoders with contrastive learning. First-author paper:
+            [**On the Perception Bottleneck of VLMs for Chart Understanding**](https://arxiv.org/abs/2503.18435) (Findings of EMNLP 2025)."
       - company: Shanghai AI Lab
         position: Research Intern
         location: Shanghai, China
         start_date: 2023-06
         end_date: 2023-12
         highlights:
-          - Worked on LLM truthfulness and internal representation analysis.
-
+          - Mentored by Prof. Yu Cheng.
+          - "Investigated a universal truthfulness hyperplane using probes trained on 40+ datasets; found that data diversity improves cross-dataset generalization.
+            First-author paper: [**On the Universal Truthfulness Hyperplane Inside LLMs**](https://arxiv.org/abs/2407.08582) (EMNLP 2024)."
+    Publications:
+      - title: "WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents"
+        date: "2025"
+        publisher: arXiv:2509.06501, 2025
+        url: https://arxiv.org/abs/2509.06501
+        summary:
+          '**Junteng Liu**\*, Yunji Li\*, Chi Zhang, Jingyang Li, Aili Chen, Ke Ji, Weiyu Cheng, Zijia Wu, Chengyu Du, Qidi Xu, Jiayuan Song, Zhengmao
+          Zhu, Wenhu Chen, Pengyu Zhao, Junxian He'
+      - title: "SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond"
+        date: "2025"
+        publisher: NeurIPS 2025
+        url: https://papers.nips.cc/paper_files/paper/2025/hash/926ec82c83afe07db613956ae48c6700-Abstract-Conference.html
+        summary:
+          "**Junteng Liu**, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang,
+          Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He"
+      - title: On the Perception Bottleneck of VLMs for Chart Understanding
+        date: "2025"
+        publisher: Findings of EMNLP 2025
+        url: https://arxiv.org/abs/2503.18435
+        summary: "**Junteng Liu**, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He"
+      - title: On the Universal Truthfulness Hyperplane Inside LLMs
+        date: "2024"
+        publisher: EMNLP 2024
+        url: https://arxiv.org/abs/2407.08582
+        summary: "**Junteng Liu**, Shiqi Chen, Yu Cheng, Junxian He"
+      - title: "The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence"
+        date: "2026"
+        publisher: arXiv:2605.26494, 2026
+        url: https://arxiv.org/abs/2605.26494
+        summary: MiniMax Team (including **Junteng Liu**)
+      - title: "MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention"
+        date: "2025"
+        publisher: arXiv:2506.13585, 2025
+        url: https://arxiv.org/abs/2506.13585
+        summary: MiniMax Team (including **Junteng Liu**)
+      - title: "The Tool Decathlon: Benchmarking Language Agents for Diverse, Realistic, and Long-Horizon Task Execution"
+        date: "2026"
+        publisher: ICLR 2026
+        url: https://openreview.net/pdf?id=z53s5p0qhf
+        summary:
+          Junlong Li, Wenshuo Zhao, Jian Zhao, Weihao Zeng, Haoze Wu, Xiaochen Wang, Rui Ge, Yuxuan Cao, Yuzhen Huang, Wei Liu, **Junteng Liu**, Zhaochen
+          Su, Yiyang Guo, Fan Zhou, Lueyang Zhang, Juan Michelini, Xingyao Wang, Xiang Yue, Shuyan Zhou, Graham Neubig, Junxian He
+      - title: Learn to Reason Efficiently with Adaptive Length-Based Reward Shaping
+        date: "2026"
+        publisher: ICLR 2026
+        url: https://openreview.net/pdf?id=hj9eKpqxQl
+        summary: Wei Liu, Ruochen Zhou, Yiyun Deng, Yuzhen Huang, **Junteng Liu**, et al.
+      - title: "DIVE: Scaling Diversity in Agentic Task Synthesis for Generalizable Tool Use"
+        date: "2026"
+        publisher: ICML 2026
+        url: https://arxiv.org/abs/2603.11076
+        summary: Aili Chen, Chi Zhang, **Junteng Liu**, et al.
+      - title: "In-Context Sharpness as Alerts: An Inner Representation Perspective for Hallucination Mitigation"
+        date: "2024"
+        publisher: ICML 2024
+        url: https://proceedings.mlr.press/v235/chen24av.html
+        summary: Shiqi Chen, Miao Xiong, **Junteng Liu**, Zhengxuan Wu, Teng Xiao, Siyang Gao, Junxian He
+      - title: Composing Parameter-Efficient Modules with Arithmetic Operation
+        date: "2023"
+        publisher: NeurIPS 2023
+        url: https://papers.neurips.cc/paper_files/paper/2023/hash/299a08ee712d4752c890938da99a77c6-Abstract-Conference.html
+        summary: Jinghan Zhang, Shiqi Chen, **Junteng Liu**, Junxian He
+      - title: "C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models"
+        date: "2023"
+        publisher: NeurIPS 2023
+        url: https://arxiv.org/abs/2305.08322
+        summary:
+          Yuzhen Huang, Yuzhuo Bai, Zhihao Zhu, Junlei Zhang, Jinghan Zhang, Tangjun Su, **Junteng Liu**, Chuancheng Lv, Yikai Zhang, Jiayi Lei, Yao
+          Fu, Maosong Sun, Junxian He
     Awards:
       - title: Zhiyuan Honor Scholarship
-        date: 2023
+        date: 2020–2024
         awarder: Shanghai Jiao Tong University
-
     Skills:
       - name: Research Topics
         level: Advanced
         icon: fa-solid fa-brain
-        keywords: Agentic LLMs, Long-Horizon Reasoning, RL for Reasoning, Vision-Language Models, LLM Truthfulness
-
+        keywords:
+          - Recursive Self-Improvement
+          - Coding Agents
+          - Long-Horizon AI Development
+          - Verifiable Tasks
+          - Reinforcement Learning
+          - Inference Systems
+          - Logical Reasoning
+          - Tool Use
     Languages:
       - name: Chinese
         summary: Native
-
       - name: English
         summary: Fluent

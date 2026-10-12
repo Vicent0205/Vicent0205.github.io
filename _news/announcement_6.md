@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started a research internship at **Apple MLR** in Cupertino, mentored by Yizhe Zhang.
+Started a Research Scientist internship at **Apple MLR** in Cupertino, mentored by Yizhe Zhang and Ruixiang Zhang.

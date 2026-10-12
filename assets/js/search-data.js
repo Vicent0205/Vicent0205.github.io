@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "publications",
-          description: "Selected papers in reverse chronological order.",
+          description: "First-author papers, technical reports, and other publications.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -66,8 +66,8 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-the-tool-decathlon-was-released-benchmarking-language-agents-for-diverse-and-long-horizon-task-execution",
           title: 'Our paper The Tool Decathlon was released, benchmarking language agents for diverse and...',
           description: "",
-          section: "News",},{id: "news-started-a-research-internship-at-apple-mlr-in-cupertino-mentored-by-yizhe-zhang",
-          title: 'Started a research internship at Apple MLR in Cupertino, mentored by Yizhe Zhang....',
+          section: "News",},{id: "news-started-a-research-scientist-internship-at-apple-mlr-in-cupertino-mentored-by-yizhe-zhang-and-ruixiang-zhang",
+          title: 'Started a Research Scientist internship at Apple MLR in Cupertino, mentored by Yizhe...',
           description: "",
           section: "News",},{id: "projects-webexplorer",
           title: 'WebExplorer',

@@ -4,46 +4,33 @@ title: About
 permalink: /
 nav: true
 nav_order: 1
-subtitle: Third-year Ph.D. Student at HKUST NLP Group
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false
-  more_info: >
-    <p>Hong Kong University of Science and Technology</p>
-    <p>Clear Water Bay, Hong Kong</p>
-
+subtitle: Third-year Ph.D. student · HKUST NLP Group
+profile: false
 selected_papers: false
 social: false
-
 announcements:
   enabled: true
-  scrollable: true
-  limit: 10
-
+  scrollable: false
+  limit: 4
 latest_posts:
   enabled: false
 ---
 
-I am a third-year Ph.D. student at [HKUST NLP Group](https://github.com/hkust-nlp), advised by Professor [Junxian He](https://jxhe.github.io/). I received my B.Eng. in Automation from [Shanghai Jiao Tong University (SJTU)](https://en.sjtu.edu.cn/) in 2024, as part of the IEEE Honor Class.
+<link rel="stylesheet" href="{{ '/assets/css/about.css' | relative_url }}?v=20261013-clean">
 
-My research focuses on:
-
-- Recursive self-improvement (RSI), coding agents, and long-horizon AI development
-- Verifiable task design and reinforcement learning
-- Logical reasoning and search agents
-- Inference systems
-
-I was a Research Scientist Intern at **Apple MLR** (Cupertino) from April to September 2026, mentored by [Yizhe Zhang](https://scholar.google.com/citations?user=WDVMfggAAAAJ) and [Ruixiang Zhang](https://scholar.google.com/citations?user=VQYdApgAAAAJ). Previously, I interned at MiniMax (a core contributor to MiniMax-M1 and MiniMax-M2), Tencent WXG, and Shanghai AI Lab.
-
-I am broadly interested in building trustworthy and capable reasoning systems.
-
-<p class="mt-2 mb-3">
-  <a href="https://scholar.google.com/citations?user=tbK9jl4AAAAJ" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary mr-2 mb-2">
-    <i class="ai ai-google-scholar ai-1x"></i> Google Scholar
-  </a>
-  <a href="https://twitter.com/junteng88716710" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary mb-2">
-    <i class="fa-brands fa-x-twitter"></i> @junteng88716710
-  </a>
-</p>
+<div class="home-intro">
+  <div class="home-bio">
+    <p>I am advised by Professor <a href="https://jxhe.github.io/">Junxian He</a> at the <a href="https://github.com/hkust-nlp">HKUST NLP Group</a>. I received my B.Eng. in Automation from Shanghai Jiao Tong University (IEEE Honor Class) in 2024.</p>
+    <p>My research focuses on <strong>recursive self-improvement (RSI) and coding agents</strong>. I study how verifiable feedback and reinforcement learning can improve agents for inference-system development, logical reasoning, and search.</p>
+    <p>Previously, I was a Research Scientist Intern at Apple MLR and a Research Intern at MiniMax, where I was a core contributor to MiniMax-M1 and MiniMax-M2.</p>
+    <nav class="home-links" aria-label="Contact and research profiles">
+      <a href="mailto:jliugi@connect.ust.hk">Email</a>
+      <a href="https://scholar.google.com/citations?user=tbK9jl4AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      <a href="https://github.com/Vicent0205" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="{{ '/cv/' | relative_url }}">CV</a>
+    </nav>
+  </div>
+  <figure class="home-portrait">
+    <img src="{{ '/assets/img/home-portrait.webp' | relative_url }}" alt="Junteng Liu" width="380" height="380" fetchpriority="high" decoding="async">
+  </figure>
+</div>

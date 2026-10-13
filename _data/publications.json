@@ -1,49 +1,5 @@
 [
   {
-    "id": "webexplorer",
-    "title": "WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents",
-    "authors": "**Junteng Liu**\\*, Yunji Li\\*, Chi Zhang, Jingyang Li, Aili Chen, Ke Ji, Weiyu Cheng, Zijia Wu, Chengyu Du, Qidi Xu, Jiayuan Song, Zhengmao Zhu, Wenhu Chen, Pengyu Zhao, Junxian He",
-    "year": 2025,
-    "venue": "arXiv",
-    "preview": "/assets/img/publications/webexplorer.webp",
-    "preview_alt": "BrowseComp results from the WebExplorer paper",
-    "paper": "https://arxiv.org/abs/2509.06501",
-    "code": "https://github.com/hkust-nlp/WebExplorer"
-  },
-  {
-    "id": "synlogic",
-    "title": "SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond",
-    "authors": "**Junteng Liu**, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He",
-    "year": 2025,
-    "venue": "NeurIPS",
-    "preview": "/assets/img/publications/synlogic.webp",
-    "preview_alt": "Task synthesis and verification pipeline from the SynLogic paper",
-    "paper": "https://papers.nips.cc/paper_files/paper/2025/hash/926ec82c83afe07db613956ae48c6700-Abstract-Conference.html",
-    "code": "https://github.com/MiniMax-AI/SynLogic"
-  },
-  {
-    "id": "chart",
-    "title": "On the Perception Bottleneck of VLMs for Chart Understanding",
-    "authors": "**Junteng Liu**, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He",
-    "year": 2025,
-    "venue": "Findings of EMNLP",
-    "preview": "/assets/img/publications/chart.webp",
-    "preview_alt": "Illustrative chart understanding example from the paper",
-    "paper": "https://arxiv.org/abs/2503.18435",
-    "code": "https://github.com/hkust-nlp/Vision4Chart"
-  },
-  {
-    "id": "truthfulness",
-    "title": "On the Universal Truthfulness Hyperplane Inside LLMs",
-    "authors": "**Junteng Liu**, Shiqi Chen, Yu Cheng, Junxian He",
-    "year": 2024,
-    "venue": "EMNLP",
-    "preview": "/assets/img/publications/truthfulness.webp",
-    "preview_alt": "Truthfulness probing and generalization framework from the paper",
-    "paper": "https://arxiv.org/abs/2407.08582",
-    "code": "https://github.com/hkust-nlp/Universal_Truthfulness_Hyperplane"
-  },
-  {
     "id": "minimax-m2",
     "title": "The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence",
     "authors": "MiniMax Team (including **Junteng Liu**)",
@@ -52,17 +8,6 @@
     "preview": "/assets/img/publications/minimax-m2.webp",
     "preview_alt": "Figure from The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence",
     "paper": "https://arxiv.org/abs/2605.26494",
-    "code": null
-  },
-  {
-    "id": "minimax-m1",
-    "title": "MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention",
-    "authors": "MiniMax Team (including **Junteng Liu**)",
-    "year": 2025,
-    "venue": "arXiv",
-    "preview": "/assets/img/publications/minimax-m1.webp",
-    "preview_alt": "Figure from MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention",
-    "paper": "https://arxiv.org/abs/2506.13585",
     "code": null
   },
   {
@@ -97,6 +42,61 @@
     "preview_alt": "Figure from DIVE: Scaling Diversity in Agentic Task Synthesis for Generalizable Tool Use",
     "paper": "https://arxiv.org/abs/2603.11076",
     "code": null
+  },
+  {
+    "id": "webexplorer",
+    "title": "WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents",
+    "authors": "**Junteng Liu**\\*, Yunji Li\\*, Chi Zhang, Jingyang Li, Aili Chen, Ke Ji, Weiyu Cheng, Zijia Wu, Chengyu Du, Qidi Xu, Jiayuan Song, Zhengmao Zhu, Wenhu Chen, Pengyu Zhao, Junxian He",
+    "year": 2025,
+    "venue": "arXiv",
+    "preview": "/assets/img/publications/webexplorer.webp",
+    "preview_alt": "BrowseComp results from the WebExplorer paper",
+    "paper": "https://arxiv.org/abs/2509.06501",
+    "code": "https://github.com/hkust-nlp/WebExplorer"
+  },
+  {
+    "id": "synlogic",
+    "title": "SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond",
+    "authors": "**Junteng Liu**, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He",
+    "year": 2025,
+    "venue": "NeurIPS",
+    "preview": "/assets/img/publications/synlogic.webp",
+    "preview_alt": "Task synthesis and verification pipeline from the SynLogic paper",
+    "paper": "https://papers.nips.cc/paper_files/paper/2025/hash/926ec82c83afe07db613956ae48c6700-Abstract-Conference.html",
+    "code": "https://github.com/MiniMax-AI/SynLogic"
+  },
+  {
+    "id": "chart",
+    "title": "On the Perception Bottleneck of VLMs for Chart Understanding",
+    "authors": "**Junteng Liu**, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He",
+    "year": 2025,
+    "venue": "Findings of EMNLP",
+    "preview": "/assets/img/publications/chart.webp",
+    "preview_alt": "Illustrative chart understanding example from the paper",
+    "paper": "https://arxiv.org/abs/2503.18435",
+    "code": "https://github.com/hkust-nlp/Vision4Chart"
+  },
+  {
+    "id": "minimax-m1",
+    "title": "MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention",
+    "authors": "MiniMax Team (including **Junteng Liu**)",
+    "year": 2025,
+    "venue": "arXiv",
+    "preview": "/assets/img/publications/minimax-m1.webp",
+    "preview_alt": "Figure from MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention",
+    "paper": "https://arxiv.org/abs/2506.13585",
+    "code": null
+  },
+  {
+    "id": "truthfulness",
+    "title": "On the Universal Truthfulness Hyperplane Inside LLMs",
+    "authors": "**Junteng Liu**, Shiqi Chen, Yu Cheng, Junxian He",
+    "year": 2024,
+    "venue": "EMNLP",
+    "preview": "/assets/img/publications/truthfulness.webp",
+    "preview_alt": "Truthfulness probing and generalization framework from the paper",
+    "paper": "https://arxiv.org/abs/2407.08582",
+    "code": "https://github.com/hkust-nlp/Universal_Truthfulness_Hyperplane"
   },
   {
     "id": "sharpness",

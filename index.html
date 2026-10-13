@@ -314,78 +314,29 @@
       </div>
     
 
-    <div class="clearfix"><p>I am a third-year Ph.D. student at <a href="https://github.com/hkust-nlp">HKUST NLP Group</a>, advised by Professor <a href="https://jxhe.github.io/">Junxian He</a>. I received my B.Eng. in Automation from <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a> in 2024, as part of the IEEE Honor Class.</p>
+    <div class="clearfix"><p>I am a third-year Ph.D. student at <a href="https://github.com/hkust-nlp">HKUST NLP Group</a>, advised by Professor <a href="https://jxhe.github.io/">Junxian He</a>. I received my B.Eng. in Automation from <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a> in 2024, as part of the IEEE Honor Class.</p>
 
-<p>My research focuses on <strong>recursive self-improvement (RSI) and coding agents for long-horizon AI development</strong>. I study how verifiable feedback and reinforcement learning can improve agent capabilities, from logical reasoning and search to autonomous inference-system development.</p>
+<p>My research focuses on:</p>
 
-<p>I was a Research Scientist Intern at <strong>Apple MLR</strong> from April to September 2026, mentored by <a href="https://scholar.google.com/citations?user=WDVMfggAAAAJ">Yizhe Zhang</a> and <a href="https://scholar.google.com/citations?user=VQYdApgAAAAJ">Ruixiang Zhang</a>. Previously, I interned at <strong>MiniMax</strong>, <strong>Tencent WXG</strong>, and <strong>Shanghai AI Lab</strong>.</p>
+<ul>
+  <li>Recursive self-improvement (RSI), coding agents, and long-horizon AI development</li>
+  <li>Verifiable task design and reinforcement learning</li>
+  <li>Logical reasoning and search agents</li>
+  <li>Inference systems</li>
+</ul>
+
+<p>I was a Research Scientist Intern at <strong>Apple MLR</strong> (Cupertino) from April to September 2026, mentored by <a href="https://scholar.google.com/citations?user=WDVMfggAAAAJ">Yizhe Zhang</a> and <a href="https://scholar.google.com/citations?user=VQYdApgAAAAJ">Ruixiang Zhang</a>. Previously, I interned at MiniMax (a core contributor to MiniMax-M1 and MiniMax-M2), Tencent WXG, and Shanghai AI Lab.</p>
+
+<p>I am broadly interested in building trustworthy and capable reasoning systems.</p>
 
 <p class="mt-2 mb-3">
   <a href="https://scholar.google.com/citations?user=tbK9jl4AAAAJ" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary mr-2 mb-2">
     <i class="ai ai-google-scholar ai-1x"></i> Google Scholar
   </a>
-  <a href="https://github.com/Vicent0205" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary mr-2 mb-2">
-    <i class="fa-brands fa-github"></i> GitHub
-  </a>
-  <a href="/cv/" class="btn btn-sm btn-outline-secondary mr-2 mb-2">CV</a>
-  <a href="mailto:jliugi@connect.ust.hk" class="btn btn-sm btn-outline-secondary mb-2">
-    <i class="fa-solid fa-envelope"></i> Email
+  <a href="https://twitter.com/junteng88716710" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary mb-2">
+    <i class="fa-brands fa-x-twitter"></i> @junteng88716710
   </a>
 </p>
-
-<div class="clearfix"></div>
-
-<h2 id="research-experience">Research Experience</h2>
-
-<h3 id="apple-mlr">Apple MLR</h3>
-
-<p><strong>Research Scientist Intern · Cupertino, USA · Apr–Sep 2026</strong></p>
-
-<ul>
-  <li>Developed <strong>RSI-Inference</strong> (working paper, first author), a benchmark for evaluating whether coding agents can autonomously develop and maintain <strong>vLLM and SGLang</strong> in GPU-backed sandboxes. It covers two task families:
-    <ul>
-      <li><strong>Model support:</strong> Add native support for previously unsupported architectures, such as DeepSeek-V4, and pass correctness and serving-feature checks.</li>
-      <li><strong>Optimization:</strong> Modify engine source code to improve throughput and latency for models already supported, under fixed deployment settings on H100 and B200 GPUs.</li>
-    </ul>
-  </li>
-  <li>In the reported evaluation snapshot, Sonnet-5.5 and Opus-5.5 achieved <strong>1.68× / 1.48×</strong> optimization speedups, with <strong>27.8% / 16.7%</strong> model-support pass@1. DeepSeek-V4.1-Flash achieved <strong>0.0%</strong> support pass@1 and <strong>1.24×</strong> speedup.</li>
-</ul>
-
-<h3 id="minimax">MiniMax</h3>
-
-<p><strong>Research Intern · Shanghai, China · Feb 2025–Feb 2026</strong></p>
-
-<p>Core contributor to MiniMax-M1 and MiniMax-M2.</p>
-
-<ul>
-  <li><strong>Logical reasoning:</strong> Developed <a href="https://arxiv.org/abs/2505.19641"><strong>SynLogic</strong></a> (first author, NeurIPS 2025), synthesizing rule-verifiable data across 35 logical task types and conducting RL with verifiable rewards. SynLogic-32B surpassed DeepSeek-R1-Distill-Qwen-32B on BBEH (<strong>25.5% vs. 19.2%</strong>). This data and RL work contributed to <strong>MiniMax-M1</strong>.</li>
-  <li><strong>Search agents:</strong> Developed <a href="https://arxiv.org/abs/2509.06501"><strong>WebExplorer</strong></a> (first author), combining web exploration, query evolution, and RL training. WebExplorer-8B surpassed WebSailor-72B on BrowseComp-en/zh (Avg@4: <strong>15.7% vs. 12.0% / 32.0% vs. 30.1%</strong>). The data was used in <strong>MiniMax-M2</strong> and formed the basis for subsequent <strong>MiniMax-M3</strong> search-data improvements.</li>
-</ul>
-
-<h3 id="tencent-wxg">Tencent WXG</h3>
-
-<p><strong>Research Intern · Shanghai, China · Jun–Sep 2024</strong> · Mentor: Zifei Shan</p>
-
-<p>Investigated vision-encoder bottlenecks in VLM chart understanding and trained improved encoders with contrastive learning. First-author paper: <a href="https://arxiv.org/abs/2503.18435"><strong>On the Perception Bottleneck of VLMs for Chart Understanding</strong></a>, Findings of EMNLP 2025.</p>
-
-<h3 id="shanghai-ai-lab">Shanghai AI Lab</h3>
-
-<p><strong>Research Intern · Shanghai, China · Jun–Dec 2023</strong> · Mentor: Prof. Yu Cheng</p>
-
-<p>Investigated a universal truthfulness hyperplane using probes trained on 40+ datasets and found that data diversity improves cross-dataset generalization. First-author paper: <a href="https://arxiv.org/abs/2407.08582"><strong>On the Universal Truthfulness Hyperplane Inside LLMs</strong></a>, EMNLP 2024.</p>
-
-<h2 id="selected-publications">Selected Publications</h2>
-
-<ul>
-  <li><a href="https://arxiv.org/abs/2509.06501"><strong>WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents</strong></a> · First author · arXiv 2025</li>
-  <li><a href="https://arxiv.org/abs/2505.19641"><strong>SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond</strong></a> · First author · NeurIPS 2025</li>
-  <li><a href="https://arxiv.org/abs/2503.18435"><strong>On the Perception Bottleneck of VLMs for Chart Understanding</strong></a> · First author · Findings of EMNLP 2025</li>
-  <li><a href="https://arxiv.org/abs/2407.08582"><strong>On the Universal Truthfulness Hyperplane Inside LLMs</strong></a> · First author · EMNLP 2024</li>
-  <li><a href="https://arxiv.org/abs/2605.26494"><strong>The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence</strong></a> · Technical report · 2026</li>
-  <li><a href="https://arxiv.org/abs/2506.13585"><strong>MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention</strong></a> · Technical report · 2025</li>
-</ul>
-
-<p><a href="/publications/">Full publication list →</a></p>
 </div>
 
     <!-- News -->

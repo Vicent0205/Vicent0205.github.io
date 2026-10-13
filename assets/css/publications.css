@@ -11,20 +11,23 @@
   margin-bottom: 1rem;
 }
 .publication-search-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 128px max-content;
+  align-items: center;
   gap: 0.75rem;
   margin-bottom: 0.9rem;
 }
 .publication-search {
   display: flex;
   align-items: center;
-  flex: 1;
+  box-sizing: border-box;
+  height: 44px;
   min-width: 0;
   gap: 0.65rem;
   margin: 0;
   border: 1px solid var(--publication-border);
   border-radius: 6px;
-  padding: 0.65rem 0.85rem;
+  padding: 0 0.85rem;
 }
 .publication-search svg {
   width: 18px;
@@ -40,7 +43,10 @@
   background: transparent;
   color: var(--global-text-color);
   font: inherit;
-  font-size: 0.88rem;
+  margin: 0;
+  padding: 0;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 .publication-search:focus-within {
   outline: 2px solid var(--publication-accent);
@@ -50,18 +56,38 @@
   color: var(--publication-muted);
 }
 .publication-year {
+  position: relative;
+  display: block;
+  height: 44px;
   margin: 0;
 }
 .publication-year select {
-  height: 100%;
-  min-width: 120px;
-  padding: 0.6rem 0.8rem;
+  appearance: none;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 44px;
+  min-width: 0;
+  margin: 0;
+  padding: 0 2rem 0 0.85rem;
   border: 1px solid var(--publication-border);
   border-radius: 6px;
   color: var(--global-text-color);
   background: var(--global-bg-color);
   font: inherit;
-  font-size: 0.88rem;
+  font-size: 0.875rem;
+  line-height: 42px;
+  cursor: pointer;
+}
+.publication-select-arrow {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  transform: translateY(-50%);
+  pointer-events: none;
 }
 .publication-count,
 .publication-note {
@@ -69,7 +95,15 @@
   font-size: 0.76rem;
 }
 .publication-count {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 104px;
+  height: 44px;
   margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  font-variant-numeric: tabular-nums;
   white-space: nowrap;
   text-align: right;
 }
@@ -198,10 +232,13 @@
 }
 @media (max-width: 575px) {
   .publication-search-row {
+    grid-template-columns: minmax(0, 1fr) 116px;
     gap: 0.5rem;
   }
-  .publication-year select {
-    min-width: 98px;
+  .publication-count {
+    grid-column: 1 / -1;
+    justify-self: end;
+    height: auto;
   }
   .publication-row {
     grid-template-columns: minmax(0, 1fr);

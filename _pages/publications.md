@@ -7,7 +7,7 @@ nav: true
 nav_order: 2
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}?v=20261013-toolbar">
 
 <div class="publication-explorer" data-publications>
   <div class="publication-tools" data-publication-tools hidden>
@@ -20,9 +20,10 @@ nav_order: 2
       <label class="publication-year">
         <span class="sr-only">Filter by year</span>
         <select data-publication-year><option value="">All years</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option></select>
+        <svg class="publication-select-arrow" aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m4 6 4 4 4-4"></path></svg>
       </label>
+      <p class="publication-count" data-publication-count role="status" aria-live="polite">12 publications</p>
     </div>
-    <p class="publication-count" data-publication-count role="status" aria-live="polite">12 publications</p>
   </div>
   <p class="publication-note">* Equal contribution.</p>
   <div class="publication-list">

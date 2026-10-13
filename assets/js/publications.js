@@ -3,12 +3,9 @@
   if (!root) return;
   const search = root.querySelector("[data-publication-search]");
   const year = root.querySelector("[data-publication-year]");
-  const filters = [...root.querySelectorAll("[data-publication-filter]")];
   const rows = [...root.querySelectorAll("[data-publication]")];
-  const groups = [...root.querySelectorAll("[data-publication-group]")];
   const count = root.querySelector("[data-publication-count]");
   const empty = root.querySelector("[data-publication-empty]");
-  let contribution = "";
   const searchable = new Map(
     rows.map((row) => [
       row,
@@ -30,27 +27,14 @@
     const terms = search.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
     let visible = 0;
     rows.forEach((row) => {
-      const matches =
-        (!contribution || row.dataset.group === contribution) &&
-        (!year.value || row.dataset.year === year.value) &&
-        terms.every((term) => searchable.get(row).includes(term));
+      const matches = (!year.value || row.dataset.year === year.value) && terms.every((term) => searchable.get(row).includes(term));
       row.hidden = !matches;
       if (matches) visible += 1;
-    });
-    groups.forEach((group) => {
-      group.hidden = ![...group.querySelectorAll("[data-publication]")].some((row) => !row.hidden);
     });
     count.textContent = `${visible} ${visible === 1 ? "publication" : "publications"}`;
     empty.hidden = visible !== 0;
     refreshAuthorToggles();
   }
-  filters.forEach((button) => {
-    button.addEventListener("click", () => {
-      contribution = button.dataset.publicationFilter;
-      filters.forEach((filter) => filter.setAttribute("aria-pressed", String(filter === button)));
-      applyFilters();
-    });
-  });
   search.addEventListener("input", applyFilters);
   year.addEventListener("change", applyFilters);
   root.querySelectorAll("[data-authors-toggle]").forEach((toggle) => {

@@ -17,8 +17,8 @@ ninja.data = [{
             window.location.href = "/";
           },
         },{id: "nav-publications",
-          title: "publications",
-          description: "First-author papers, technical reports, and other publications.",
+          title: "Publications",
+          description: "Research papers and technical reports.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";

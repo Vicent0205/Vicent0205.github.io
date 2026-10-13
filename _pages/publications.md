@@ -27,7 +27,9 @@ nav_order: 2
   </div>
   <p class="publication-note">* Equal contribution.</p>
   <div class="publication-list">
-    {% for paper in site.data.publications %}
+    {% assign publication_years = site.data.publications | group_by: 'year' | sort: 'name' | reverse %}
+    {% for publication_year in publication_years %}
+      {% for paper in publication_year.items %}
         <article class="publication-row" data-publication data-year="{{ paper.year }}" aria-labelledby="paper-{{ paper.id }}">
           <a class="publication-preview" href="{{ paper.paper }}" target="_blank" rel="noopener noreferrer" aria-label="Read {{ paper.title | escape }}">
             <img src="{{ paper.preview | relative_url }}" alt="{{ paper.preview_alt | escape }}" loading="lazy" decoding="async" width="640" height="400">
@@ -43,6 +45,7 @@ nav_order: 2
             </div>
           </div>
         </article>
+      {% endfor %}
     {% endfor %}
   </div>
   <p class="publication-empty" data-publication-empty hidden>No publications match these filters. Try another search or year.</p>

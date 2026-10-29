@@ -432,22 +432,27 @@
                 </li>
               
                 <li>
-                  <span class="item">Developed <strong>RSI-Inference</strong> (working paper, first author), a benchmark for evaluating whether coding agents can autonomously develop and maintain <strong>vLLM and SGLang</strong> in GPU-backed sandboxes.
+                  <span class="item">Developed and publicly released <a href="https://rsi-inference.com"><strong>RSI-Inference</strong></a> (first author), a benchmark of <strong>37 real-world tasks</strong> evaluating whether coding agents can autonomously develop and maintain <strong>vLLM and SGLang</strong> on H100 and B200 GPUs.
 </span>
                 </li>
               
                 <li>
-                  <span class="item"><strong>Model support:</strong> Native integration of previously unsupported architectures (e.g., DeepSeek-V4), evaluated through correctness and serving-feature checks.
+                  <span class="item"><strong>Day-0 model support (10 tasks):</strong> Built tasks for integrating previously unsupported models, evaluated through correctness and serving-feature checks.
 </span>
                 </li>
               
                 <li>
-                  <span class="item"><strong>Optimization:</strong> Source-code changes to accelerate models already supported by the engine, measuring throughput and latency under fixed deployment settings on H100 and B200 GPUs.
+                  <span class="item"><strong>Inference optimization (20 tasks):</strong> Built tasks requiring source-code changes to improve serving throughput under fixed deployment settings.
 </span>
                 </li>
               
                 <li>
-                  <span class="item">In the reported evaluation snapshot, Sonnet-5.5 and Opus-5.5 led the overall ranking, with optimization speedups of <strong>1.68× and 1.48×</strong> and model-support pass@1 of <strong>27.8% and 16.7%</strong>, respectively. DeepSeek-V4.1-Flash achieved <strong>0.0%</strong> support pass@1 and <strong>1.24×</strong> speedup.
+                  <span class="item"><strong>Bug fix (7 tasks):</strong> Built tasks requiring agents to identify and repair performance regressions.
+</span>
+                </li>
+              
+                <li>
+                  <span class="item">Sonnet-5.5 and Opus-5.5 ranked first and second overall, achieving <strong>1.68× and 1.48×</strong> geometric-mean speedups across the <strong>27 optimization and bug-fix tasks</strong>, but only <strong>26.7% and 13.3%</strong> pass@1 on Day-0 Model Support, respectively. DeepSeek-V4.1-Flash achieved <strong>0.0%</strong> support pass@1 and <strong>1.24×</strong> speedup.
 </span>
                 </li>
               
@@ -517,12 +522,12 @@
                 </li>
               
                 <li>
-                  <span class="item"><strong>Logical reasoning:</strong> Developed <a href="https://arxiv.org/abs/2505.19641"><strong>SynLogic</strong></a> (first author, NeurIPS 2025), synthesizing rule-verifiable data across 35 logical task types for RL with verifiable rewards. SynLogic-32B outperformed DeepSeek-R1-Distill-Qwen-32B on BBEH (<strong>25.5% vs. 19.2%</strong>). This data and RL work contributed to <strong>MiniMax-M1</strong>.
+                  <span class="item"><strong>Logical reasoning RL:</strong> Developed <a href="https://arxiv.org/abs/2505.19641"><strong>SynLogic</strong></a> (first author, NeurIPS 2025), synthesizing rule-verifiable data across 35 logical task types and training reasoning models. SynLogic-32B outperformed DeepSeek-R1-Distill-Qwen-32B on BBEH (<strong>25.5% vs. 19.2%</strong>). This data and RL work contributed to <strong>MiniMax-M1</strong>.
 </span>
                 </li>
               
                 <li>
-                  <span class="item"><strong>Search agents:</strong> Developed <a href="https://arxiv.org/abs/2509.06501"><strong>WebExplorer</strong></a> (first author), synthesizing challenging search tasks through web exploration and query evolution, and explored RL training. WebExplorer-8B surpassed WebSailor-72B on BrowseComp-en/zh (Avg@4: <strong>15.7% vs. 12.0% / 32.0% vs. 30.1%</strong>). The data was used in <strong>MiniMax-M2</strong> and formed the basis for subsequent <strong>MiniMax-M3</strong> search-data improvements.
+                  <span class="item"><strong>Search-agent RL:</strong> Developed <a href="https://arxiv.org/abs/2509.06501"><strong>WebExplorer</strong></a> (first author) and conducted <strong>RL training experiments</strong> for long-horizon web agents, using challenging search tasks synthesized through web exploration and query evolution. WebExplorer-8B surpassed WebSailor-72B on BrowseComp-en/zh (Avg@4: <strong>15.7% vs. 12.0% / 32.0% vs. 30.1%</strong>). The data was used in <strong>MiniMax-M2</strong> and formed the basis for subsequent <strong>MiniMax-M3</strong> search-data improvements.
 </span>
                 </li>
               
@@ -679,6 +684,37 @@
         
 
         
+        
+          
+          
+
+          
+          
+
+          <a class="anchor" id="research-questions"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">Research Questions</h3>
+            <div>
+              
+                <!-- Generic section -->
+                
+                  
+                    <ul class="card-text font-weight-light list-group list-group-flush">
+                      <li class="list-group-item">How can we train agents to do ultra-long-horizon RSI or AI4AI development?
+</li>
+                    </ul>
+                  
+                
+                  
+                    <ul class="card-text font-weight-light list-group list-group-flush">
+                      <li class="list-group-item">Beyond coding agents, what other domains can we explore?
+</li>
+                    </ul>
+                  
+                
+              
+            </div>
+          </div>
         
           
           
@@ -863,7 +899,7 @@
                 <tr>
                   <td>
                     <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
-          2025
+          2026
         </span>
                   </td>
                 </tr>
@@ -873,138 +909,18 @@
           <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
             
               <h6 class="title font-weight-bold ml-1 ml-md-4">
-                <a href="https://arxiv.org/abs/2509.06501">WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents</a>
+                <a href="https://rsi-inference.com">RSI-Inference: A Long-Horizon Benchmark for Self-Improving Inference Systems</a>
               </h6>
             
 
             
               <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-                <em>arXiv:2509.06501, 2025</em>
+                <em>Benchmark 2026</em>
               </h6>
             
 
             
-              <p class="ml-1 ml-md-4"><strong>Junteng Liu</strong>*, Yunji Li*, Chi Zhang, Jingyang Li, Aili Chen, Ke Ji, Weiyu Cheng, Zijia Wu, Chengyu Du, Qidi Xu, Jiayuan Song, Zhengmao Zhu, Wenhu Chen, Pengyu Zhao, Junxian He
-</p>
-            
-          </div>
-        
-      </div>
-    </li>
-  
-    <li class="list-group-item">
-      <div class="row">
-        
-
-        
-          <div class="col-xs-2 col-sm-2 col-md-2 text-center">
-            <table class="table-cv">
-              <tbody>
-                <tr>
-                  <td>
-                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
-          2025
-        </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
-            
-              <h6 class="title font-weight-bold ml-1 ml-md-4">
-                <a href="https://papers.nips.cc/paper_files/paper/2025/hash/926ec82c83afe07db613956ae48c6700-Abstract-Conference.html">SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond</a>
-              </h6>
-            
-
-            
-              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-                <em>NeurIPS 2025</em>
-              </h6>
-            
-
-            
-              <p class="ml-1 ml-md-4"><strong>Junteng Liu</strong>, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He
-</p>
-            
-          </div>
-        
-      </div>
-    </li>
-  
-    <li class="list-group-item">
-      <div class="row">
-        
-
-        
-          <div class="col-xs-2 col-sm-2 col-md-2 text-center">
-            <table class="table-cv">
-              <tbody>
-                <tr>
-                  <td>
-                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
-          2025
-        </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
-            
-              <h6 class="title font-weight-bold ml-1 ml-md-4">
-                <a href="https://arxiv.org/abs/2503.18435">On the Perception Bottleneck of VLMs for Chart Understanding</a>
-              </h6>
-            
-
-            
-              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-                <em>Findings of EMNLP 2025</em>
-              </h6>
-            
-
-            
-              <p class="ml-1 ml-md-4"><strong>Junteng Liu</strong>, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He
-</p>
-            
-          </div>
-        
-      </div>
-    </li>
-  
-    <li class="list-group-item">
-      <div class="row">
-        
-
-        
-          <div class="col-xs-2 col-sm-2 col-md-2 text-center">
-            <table class="table-cv">
-              <tbody>
-                <tr>
-                  <td>
-                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
-          2024
-        </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
-            
-              <h6 class="title font-weight-bold ml-1 ml-md-4">
-                <a href="https://arxiv.org/abs/2407.08582">On the Universal Truthfulness Hyperplane Inside LLMs</a>
-              </h6>
-            
-
-            
-              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-                <em>EMNLP 2024</em>
-              </h6>
-            
-
-            
-              <p class="ml-1 ml-md-4"><strong>Junteng Liu</strong>, Shiqi Chen, Yu Cheng, Junxian He
+              <p class="ml-1 ml-md-4"><strong>Junteng Liu</strong>, Richard He Bai, Huangjie Zheng, Yizhe Zhang, Ruixiang Zhang. <a href="https://github.com/apple-aiml-research/ml-rsi-inference-bench">Code</a>. <a href="https://github.com/apple-aiml-research/ml-rsi-inference-bench">GitHub stars: 100+</a> (Oct 22, 2026).
 </p>
             
           </div>
@@ -1039,52 +955,12 @@
 
             
               <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-                <em>arXiv:2605.26494, 2026</em>
+                <em>arXiv 2026</em>
               </h6>
             
 
             
-              <p class="ml-1 ml-md-4">MiniMax Team (including <strong>Junteng Liu</strong>)
-</p>
-            
-          </div>
-        
-      </div>
-    </li>
-  
-    <li class="list-group-item">
-      <div class="row">
-        
-
-        
-          <div class="col-xs-2 col-sm-2 col-md-2 text-center">
-            <table class="table-cv">
-              <tbody>
-                <tr>
-                  <td>
-                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
-          2025
-        </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
-            
-              <h6 class="title font-weight-bold ml-1 ml-md-4">
-                <a href="https://arxiv.org/abs/2506.13585">MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention</a>
-              </h6>
-            
-
-            
-              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-                <em>arXiv:2506.13585, 2025</em>
-              </h6>
-            
-
-            
-              <p class="ml-1 ml-md-4">MiniMax Team (including <strong>Junteng Liu</strong>)
+              <p class="ml-1 ml-md-4">MiniMax Team (including <strong>Junteng Liu</strong> as a <strong>core contributor</strong>). <a href="https://github.com/MiniMax-AI/MiniMax-M2">Code</a>.
 </p>
             
           </div>
@@ -1124,7 +1000,7 @@
             
 
             
-              <p class="ml-1 ml-md-4">Junlong Li, Wenshuo Zhao, Jian Zhao, Weihao Zeng, Haoze Wu, Xiaochen Wang, Rui Ge, Yuxuan Cao, Yuzhen Huang, Wei Liu, <strong>Junteng Liu</strong>, Zhaochen Su, Yiyang Guo, Fan Zhou, Lueyang Zhang, Juan Michelini, Xingyao Wang, Xiang Yue, Shuyan Zhou, Graham Neubig, Junxian He
+              <p class="ml-1 ml-md-4">Junlong Li, Wenshuo Zhao, Jian Zhao, Weihao Zeng, Haoze Wu, Xiaochen Wang, Rui Ge, Yuxuan Cao, Yuzhen Huang, Wei Liu, <strong>Junteng Liu</strong>, Zhaochen Su, Yiyang Guo, Fan Zhou, Lueyang Zhang, Juan Michelini, Xingyao Wang, Xiang Yue, Shuyan Zhou, Graham Neubig, Junxian He. <a href="https://github.com/hkust-nlp/Toolathlon">Code</a>. <a href="https://github.com/hkust-nlp/Toolathlon">GitHub stars: 500+</a> (Oct 22, 2026). Reported in official model evaluations by <a href="https://openai.com/index/introducing-gpt-5-4/">OpenAI</a>, <a href="https://www-cdn.anthropic.com/0b4915911bb0d19eca5b5ee635c80fef830a37ea.pdf">Anthropic</a>, <a href="https://deepmind.google/models/model-cards/gemini-3-5-flash/">Google DeepMind (Gemini)</a>, <a href="https://arxiv.org/html/2607.24653">Moonshot AI (Kimi)</a>, <a href="https://arxiv.org/html/2512.02556">DeepSeek</a>, and <a href="https://arxiv.org/html/2605.26494">MiniMax</a>.
 </p>
             
           </div>
@@ -1164,7 +1040,7 @@
             
 
             
-              <p class="ml-1 ml-md-4">Wei Liu, Ruochen Zhou, Yiyun Deng, Yuzhen Huang, <strong>Junteng Liu</strong>, et al.
+              <p class="ml-1 ml-md-4">Wei Liu, Ruochen Zhou, Yiyun Deng, Yuzhen Huang, <strong>Junteng Liu</strong>, et al. <a href="https://github.com/hkust-nlp/Laser">Code</a>.
 </p>
             
           </div>
@@ -1204,7 +1080,207 @@
             
 
             
-              <p class="ml-1 ml-md-4">Aili Chen, Chi Zhang, <strong>Junteng Liu</strong>, et al.
+              <p class="ml-1 ml-md-4">Aili Chen, Chi Zhang, <strong>Junteng Liu</strong>, et al. <a href="https://github.com/sheep333c/DIVE">Code</a>.
+</p>
+            
+          </div>
+        
+      </div>
+    </li>
+  
+    <li class="list-group-item">
+      <div class="row">
+        
+
+        
+          <div class="col-xs-2 col-sm-2 col-md-2 text-center">
+            <table class="table-cv">
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+          2025
+        </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+            
+              <h6 class="title font-weight-bold ml-1 ml-md-4">
+                <a href="https://arxiv.org/abs/2509.06501">WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents</a>
+              </h6>
+            
+
+            
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+                <em>arXiv 2025</em>
+              </h6>
+            
+
+            
+              <p class="ml-1 ml-md-4"><strong>Junteng Liu</strong>*, Yunji Li*, Chi Zhang, Jingyang Li, Aili Chen, Ke Ji, Weiyu Cheng, Zijia Wu, Chengyu Du, Qidi Xu, Jiayuan Song, Zhengmao Zhu, Wenhu Chen, Pengyu Zhao, Junxian He. <a href="https://github.com/hkust-nlp/WebExplorer">Code</a>. <a href="https://scholar.google.com/scholar?hl=en&amp;cites=5411412657589558456">Citations: 80+</a> · <a href="https://github.com/hkust-nlp/WebExplorer">GitHub stars: 120+</a> (Oct 22, 2026).
+</p>
+            
+          </div>
+        
+      </div>
+    </li>
+  
+    <li class="list-group-item">
+      <div class="row">
+        
+
+        
+          <div class="col-xs-2 col-sm-2 col-md-2 text-center">
+            <table class="table-cv">
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+          2025
+        </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+            
+              <h6 class="title font-weight-bold ml-1 ml-md-4">
+                <a href="https://arxiv.org/abs/2506.13585">MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention</a>
+              </h6>
+            
+
+            
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+                <em>arXiv 2025</em>
+              </h6>
+            
+
+            
+              <p class="ml-1 ml-md-4">MiniMax Team (including <strong>Junteng Liu</strong> as a <strong>core contributor</strong>). <a href="https://github.com/MiniMax-AI/MiniMax-M1">Code</a>.
+</p>
+            
+          </div>
+        
+      </div>
+    </li>
+  
+    <li class="list-group-item">
+      <div class="row">
+        
+
+        
+          <div class="col-xs-2 col-sm-2 col-md-2 text-center">
+            <table class="table-cv">
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+          2025
+        </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+            
+              <h6 class="title font-weight-bold ml-1 ml-md-4">
+                <a href="https://papers.nips.cc/paper_files/paper/2025/hash/926ec82c83afe07db613956ae48c6700-Abstract-Conference.html">SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond</a>
+              </h6>
+            
+
+            
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+                <em>NeurIPS 2025</em>
+              </h6>
+            
+
+            
+              <p class="ml-1 ml-md-4"><strong>Junteng Liu</strong>, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He. <a href="https://github.com/MiniMax-AI/SynLogic">Code</a>. <a href="https://github.com/MiniMax-AI/SynLogic">GitHub stars: 200+</a> (Oct 22, 2026).
+</p>
+            
+          </div>
+        
+      </div>
+    </li>
+  
+    <li class="list-group-item">
+      <div class="row">
+        
+
+        
+          <div class="col-xs-2 col-sm-2 col-md-2 text-center">
+            <table class="table-cv">
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+          2025
+        </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+            
+              <h6 class="title font-weight-bold ml-1 ml-md-4">
+                <a href="https://arxiv.org/abs/2503.18435">On the Perception Bottleneck of VLMs for Chart Understanding</a>
+              </h6>
+            
+
+            
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+                <em>Findings of EMNLP 2025</em>
+              </h6>
+            
+
+            
+              <p class="ml-1 ml-md-4"><strong>Junteng Liu</strong>, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He. <a href="https://github.com/hkust-nlp/Vision4Chart">Code</a>.
+</p>
+            
+          </div>
+        
+      </div>
+    </li>
+  
+    <li class="list-group-item">
+      <div class="row">
+        
+
+        
+          <div class="col-xs-2 col-sm-2 col-md-2 text-center">
+            <table class="table-cv">
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+          2024
+        </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+            
+              <h6 class="title font-weight-bold ml-1 ml-md-4">
+                <a href="https://arxiv.org/abs/2407.08582">On the Universal Truthfulness Hyperplane Inside LLMs</a>
+              </h6>
+            
+
+            
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+                <em>EMNLP 2024</em>
+              </h6>
+            
+
+            
+              <p class="ml-1 ml-md-4"><strong>Junteng Liu</strong>, Shiqi Chen, Yu Cheng, Junxian He. <a href="https://github.com/hkust-nlp/Universal_Truthfulness_Hyperplane">Code</a>.
 </p>
             
           </div>
@@ -1244,7 +1320,7 @@
             
 
             
-              <p class="ml-1 ml-md-4">Shiqi Chen, Miao Xiong, <strong>Junteng Liu</strong>, Zhengxuan Wu, Teng Xiao, Siyang Gao, Junxian He
+              <p class="ml-1 ml-md-4">Shiqi Chen, Miao Xiong, <strong>Junteng Liu</strong>, Zhengxuan Wu, Teng Xiao, Siyang Gao, Junxian He. <a href="https://github.com/hkust-nlp/Activation_Decoding">Code</a>.
 </p>
             
           </div>
@@ -1284,7 +1360,7 @@
             
 
             
-              <p class="ml-1 ml-md-4">Jinghan Zhang, Shiqi Chen, <strong>Junteng Liu</strong>, Junxian He
+              <p class="ml-1 ml-md-4">Jinghan Zhang, Shiqi Chen, <strong>Junteng Liu</strong>, Junxian He. <a href="https://github.com/hkust-nlp/PEM_composition">Code</a>. <a href="https://scholar.google.com/scholar?hl=en&amp;cites=3914196277753196289">Citations: 260+</a> (Oct 22, 2026).
 </p>
             
           </div>
@@ -1324,7 +1400,7 @@
             
 
             
-              <p class="ml-1 ml-md-4">Yuzhen Huang, Yuzhuo Bai, Zhihao Zhu, Junlei Zhang, Jinghan Zhang, Tangjun Su, <strong>Junteng Liu</strong>, Chuancheng Lv, Yikai Zhang, Jiayi Lei, Yao Fu, Maosong Sun, Junxian He
+              <p class="ml-1 ml-md-4">Yuzhen Huang, Yuzhuo Bai, Zhihao Zhu, Junlei Zhang, Jinghan Zhang, Tangjun Su, <strong>Junteng Liu</strong>, Chuancheng Lv, Yikai Zhang, Jiayi Lei, Yao Fu, Maosong Sun, Junxian He. <a href="https://github.com/hkust-nlp/ceval">Code</a>. <a href="https://scholar.google.com/scholar?hl=en&amp;cites=9525037164026157781,11111808469063226646,4903983458894953004">Citations: 1,000+</a> · <a href="https://github.com/hkust-nlp/ceval">GitHub stars: 1.8k+</a> (Oct 22, 2026).
 </p>
             
           </div>

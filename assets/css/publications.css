@@ -202,6 +202,7 @@
 }
 .publication-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.45rem;
   margin-top: 0.7rem;
 }
@@ -270,4 +271,22 @@
   .publication-row {
     break-inside: avoid;
   }
+}
+
+.publication-impact {
+  margin-top: 0.55rem;
+  color: var(--publication-muted);
+  font-size: 0.8rem;
+  line-height: 1.65;
+}
+.publication-impact p {
+  margin: 0;
+}
+.publication-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1rem;
+  margin-top: 0.55rem;
+  font-size: 0.76rem;
+  font-weight: 600;
 }

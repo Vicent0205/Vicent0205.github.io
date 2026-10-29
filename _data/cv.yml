@@ -13,6 +13,9 @@ cv:
     - network: X
       username: junteng88716710
   sections:
+    Research Questions:
+      - bullet: How can we train agents to do ultra-long-horizon RSI or AI4AI development?
+      - bullet: Beyond coding agents, what other domains can we explore?
     Education:
       - institution: Hong Kong University of Science and Technology
         location: Hong Kong
@@ -36,14 +39,11 @@ cv:
         end_date: 2026-09
         highlights:
           - Mentored by [Yizhe Zhang](https://scholar.google.com/citations?user=WDVMfggAAAAJ) and [Ruixiang Zhang](https://scholar.google.com/citations?user=VQYdApgAAAAJ).
-          - Developed **RSI-Inference** (working paper, first author), a benchmark for evaluating whether coding agents can autonomously develop and maintain
-            **vLLM and SGLang** in GPU-backed sandboxes.
-          - "**Model support:** Native integration of previously unsupported architectures (e.g., DeepSeek-V4), evaluated through correctness and serving-feature
-            checks."
-          - "**Optimization:** Source-code changes to accelerate models already supported by the engine, measuring throughput and latency under fixed deployment
-            settings on H100 and B200 GPUs."
-          - In the reported evaluation snapshot, Sonnet-5.5 and Opus-5.5 led the overall ranking, with optimization speedups of **1.68× and 1.48×** and model-support pass@1 of **27.8% and 16.7%**,
-            respectively. DeepSeek-V4.1-Flash achieved **0.0%** support pass@1 and **1.24×** speedup.
+          - Developed and publicly released [**RSI-Inference**](https://rsi-inference.com) (first author), a benchmark of **37 real-world tasks** evaluating whether coding agents can autonomously develop and maintain **vLLM and SGLang** on H100 and B200 GPUs.
+          - "**Day-0 model support (10 tasks):** Built tasks for integrating previously unsupported models, evaluated through correctness and serving-feature checks."
+          - "**Inference optimization (20 tasks):** Built tasks requiring source-code changes to improve serving throughput under fixed deployment settings."
+          - "**Bug fix (7 tasks):** Built tasks requiring agents to identify and repair performance regressions."
+          - Sonnet-5.5 and Opus-5.5 ranked first and second overall, achieving **1.68× and 1.48×** geometric-mean speedups across the **27 optimization and bug-fix tasks**, but only **26.7% and 13.3%** pass@1 on Day-0 Model Support, respectively. DeepSeek-V4.1-Flash achieved **0.0%** support pass@1 and **1.24×** speedup.
       - company: MiniMax
         position: Research Intern
         location: Shanghai, China
@@ -51,11 +51,10 @@ cv:
         end_date: 2026-02
         highlights:
           - Core contributor to MiniMax-M1 and MiniMax-M2.
-          - "**Logical reasoning:** Developed [**SynLogic**](https://arxiv.org/abs/2505.19641) (first author, NeurIPS 2025), synthesizing rule-verifiable data
-            across 35 logical task types for RL with verifiable rewards. SynLogic-32B outperformed DeepSeek-R1-Distill-Qwen-32B on BBEH (**25.5% vs. 19.2%**).
+          - "**Logical reasoning RL:** Developed [**SynLogic**](https://arxiv.org/abs/2505.19641) (first author, NeurIPS 2025), synthesizing rule-verifiable data
+            across 35 logical task types and training reasoning models. SynLogic-32B outperformed DeepSeek-R1-Distill-Qwen-32B on BBEH (**25.5% vs. 19.2%**).
             This data and RL work contributed to **MiniMax-M1**."
-          - "**Search agents:** Developed [**WebExplorer**](https://arxiv.org/abs/2509.06501) (first author), synthesizing challenging search tasks through
-            web exploration and query evolution, and explored RL training. WebExplorer-8B surpassed WebSailor-72B on BrowseComp-en/zh (Avg@4: **15.7% vs. 12.0%
+          - "**Search-agent RL:** Developed [**WebExplorer**](https://arxiv.org/abs/2509.06501) (first author) and conducted **RL training experiments** for long-horizon web agents, using challenging search tasks synthesized through web exploration and query evolution. WebExplorer-8B surpassed WebSailor-72B on BrowseComp-en/zh (Avg@4: **15.7% vs. 12.0%
             / 32.0% vs. 30.1%**). The data was used in **MiniMax-M2** and formed the basis for subsequent **MiniMax-M3** search-data improvements."
       - company: Tencent WXG
         position: Research Intern
@@ -76,74 +75,71 @@ cv:
           - "Investigated a universal truthfulness hyperplane using probes trained on 40+ datasets; found that data diversity improves cross-dataset generalization.
             First-author paper: [**On the Universal Truthfulness Hyperplane Inside LLMs**](https://arxiv.org/abs/2407.08582) (EMNLP 2024)."
     Publications:
-      - title: "WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents"
-        date: "2025"
-        publisher: arXiv:2509.06501, 2025
-        url: https://arxiv.org/abs/2509.06501
-        summary:
-          '**Junteng Liu**\*, Yunji Li\*, Chi Zhang, Jingyang Li, Aili Chen, Ke Ji, Weiyu Cheng, Zijia Wu, Chengyu Du, Qidi Xu, Jiayuan Song, Zhengmao
-          Zhu, Wenhu Chen, Pengyu Zhao, Junxian He'
-      - title: "SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond"
-        date: "2025"
-        publisher: NeurIPS 2025
-        url: https://papers.nips.cc/paper_files/paper/2025/hash/926ec82c83afe07db613956ae48c6700-Abstract-Conference.html
-        summary:
-          "**Junteng Liu**, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang,
-          Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He"
-      - title: On the Perception Bottleneck of VLMs for Chart Understanding
-        date: "2025"
-        publisher: Findings of EMNLP 2025
-        url: https://arxiv.org/abs/2503.18435
-        summary: "**Junteng Liu**, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He"
-      - title: On the Universal Truthfulness Hyperplane Inside LLMs
-        date: "2024"
-        publisher: EMNLP 2024
-        url: https://arxiv.org/abs/2407.08582
-        summary: "**Junteng Liu**, Shiqi Chen, Yu Cheng, Junxian He"
+      - title: "RSI-Inference: A Long-Horizon Benchmark for Self-Improving Inference Systems"
+        date: "2026"
+        publisher: "Benchmark 2026"
+        url: https://rsi-inference.com
+        summary: "**Junteng Liu**, Richard He Bai, Huangjie Zheng, Yizhe Zhang, Ruixiang Zhang. [Code](https://github.com/apple-aiml-research/ml-rsi-inference-bench). [GitHub stars: 100+](https://github.com/apple-aiml-research/ml-rsi-inference-bench) (Oct 22, 2026)."
       - title: "The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence"
         date: "2026"
-        publisher: arXiv:2605.26494, 2026
+        publisher: "arXiv 2026"
         url: https://arxiv.org/abs/2605.26494
-        summary: MiniMax Team (including **Junteng Liu**)
-      - title: "MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention"
-        date: "2025"
-        publisher: arXiv:2506.13585, 2025
-        url: https://arxiv.org/abs/2506.13585
-        summary: MiniMax Team (including **Junteng Liu**)
+        summary: "MiniMax Team (including **Junteng Liu** as a **core contributor**). [Code](https://github.com/MiniMax-AI/MiniMax-M2)."
       - title: "The Tool Decathlon: Benchmarking Language Agents for Diverse, Realistic, and Long-Horizon Task Execution"
         date: "2026"
-        publisher: ICLR 2026
+        publisher: "ICLR 2026"
         url: https://openreview.net/pdf?id=z53s5p0qhf
-        summary:
-          Junlong Li, Wenshuo Zhao, Jian Zhao, Weihao Zeng, Haoze Wu, Xiaochen Wang, Rui Ge, Yuxuan Cao, Yuzhen Huang, Wei Liu, **Junteng Liu**, Zhaochen
-          Su, Yiyang Guo, Fan Zhou, Lueyang Zhang, Juan Michelini, Xingyao Wang, Xiang Yue, Shuyan Zhou, Graham Neubig, Junxian He
-      - title: Learn to Reason Efficiently with Adaptive Length-Based Reward Shaping
+        summary: "Junlong Li, Wenshuo Zhao, Jian Zhao, Weihao Zeng, Haoze Wu, Xiaochen Wang, Rui Ge, Yuxuan Cao, Yuzhen Huang, Wei Liu, **Junteng Liu**, Zhaochen Su, Yiyang Guo, Fan Zhou, Lueyang Zhang, Juan Michelini, Xingyao Wang, Xiang Yue, Shuyan Zhou, Graham Neubig, Junxian He. [Code](https://github.com/hkust-nlp/Toolathlon). [GitHub stars: 500+](https://github.com/hkust-nlp/Toolathlon) (Oct 22, 2026). Reported in official model evaluations by [OpenAI](https://openai.com/index/introducing-gpt-5-4/), [Anthropic](https://www-cdn.anthropic.com/0b4915911bb0d19eca5b5ee635c80fef830a37ea.pdf), [Google DeepMind (Gemini)](https://deepmind.google/models/model-cards/gemini-3-5-flash/), [Moonshot AI (Kimi)](https://arxiv.org/html/2607.24653), [DeepSeek](https://arxiv.org/html/2512.02556), and [MiniMax](https://arxiv.org/html/2605.26494)."
+      - title: "Learn to Reason Efficiently with Adaptive Length-Based Reward Shaping"
         date: "2026"
-        publisher: ICLR 2026
+        publisher: "ICLR 2026"
         url: https://openreview.net/pdf?id=hj9eKpqxQl
-        summary: Wei Liu, Ruochen Zhou, Yiyun Deng, Yuzhen Huang, **Junteng Liu**, et al.
+        summary: "Wei Liu, Ruochen Zhou, Yiyun Deng, Yuzhen Huang, **Junteng Liu**, et al. [Code](https://github.com/hkust-nlp/Laser)."
       - title: "DIVE: Scaling Diversity in Agentic Task Synthesis for Generalizable Tool Use"
         date: "2026"
-        publisher: ICML 2026
+        publisher: "ICML 2026"
         url: https://arxiv.org/abs/2603.11076
-        summary: Aili Chen, Chi Zhang, **Junteng Liu**, et al.
+        summary: "Aili Chen, Chi Zhang, **Junteng Liu**, et al. [Code](https://github.com/sheep333c/DIVE)."
+      - title: "WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents"
+        date: "2025"
+        publisher: "arXiv 2025"
+        url: https://arxiv.org/abs/2509.06501
+        summary: "**Junteng Liu**&#42;, Yunji Li&#42;, Chi Zhang, Jingyang Li, Aili Chen, Ke Ji, Weiyu Cheng, Zijia Wu, Chengyu Du, Qidi Xu, Jiayuan Song, Zhengmao Zhu, Wenhu Chen, Pengyu Zhao, Junxian He. [Code](https://github.com/hkust-nlp/WebExplorer). [Citations: 80+](https://scholar.google.com/scholar?hl=en&cites=5411412657589558456) · [GitHub stars: 120+](https://github.com/hkust-nlp/WebExplorer) (Oct 22, 2026)."
+      - title: "MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention"
+        date: "2025"
+        publisher: "arXiv 2025"
+        url: https://arxiv.org/abs/2506.13585
+        summary: "MiniMax Team (including **Junteng Liu** as a **core contributor**). [Code](https://github.com/MiniMax-AI/MiniMax-M1)."
+      - title: "SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond"
+        date: "2025"
+        publisher: "NeurIPS 2025"
+        url: https://papers.nips.cc/paper_files/paper/2025/hash/926ec82c83afe07db613956ae48c6700-Abstract-Conference.html
+        summary: "**Junteng Liu**, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He. [Code](https://github.com/MiniMax-AI/SynLogic). [GitHub stars: 200+](https://github.com/MiniMax-AI/SynLogic) (Oct 22, 2026)."
+      - title: "On the Perception Bottleneck of VLMs for Chart Understanding"
+        date: "2025"
+        publisher: "Findings of EMNLP 2025"
+        url: https://arxiv.org/abs/2503.18435
+        summary: "**Junteng Liu**, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He. [Code](https://github.com/hkust-nlp/Vision4Chart)."
+      - title: "On the Universal Truthfulness Hyperplane Inside LLMs"
+        date: "2024"
+        publisher: "EMNLP 2024"
+        url: https://arxiv.org/abs/2407.08582
+        summary: "**Junteng Liu**, Shiqi Chen, Yu Cheng, Junxian He. [Code](https://github.com/hkust-nlp/Universal_Truthfulness_Hyperplane)."
       - title: "In-Context Sharpness as Alerts: An Inner Representation Perspective for Hallucination Mitigation"
         date: "2024"
-        publisher: ICML 2024
+        publisher: "ICML 2024"
         url: https://proceedings.mlr.press/v235/chen24av.html
-        summary: Shiqi Chen, Miao Xiong, **Junteng Liu**, Zhengxuan Wu, Teng Xiao, Siyang Gao, Junxian He
-      - title: Composing Parameter-Efficient Modules with Arithmetic Operation
+        summary: "Shiqi Chen, Miao Xiong, **Junteng Liu**, Zhengxuan Wu, Teng Xiao, Siyang Gao, Junxian He. [Code](https://github.com/hkust-nlp/Activation_Decoding)."
+      - title: "Composing Parameter-Efficient Modules with Arithmetic Operation"
         date: "2023"
-        publisher: NeurIPS 2023
+        publisher: "NeurIPS 2023"
         url: https://papers.neurips.cc/paper_files/paper/2023/hash/299a08ee712d4752c890938da99a77c6-Abstract-Conference.html
-        summary: Jinghan Zhang, Shiqi Chen, **Junteng Liu**, Junxian He
+        summary: "Jinghan Zhang, Shiqi Chen, **Junteng Liu**, Junxian He. [Code](https://github.com/hkust-nlp/PEM_composition). [Citations: 260+](https://scholar.google.com/scholar?hl=en&cites=3914196277753196289) (Oct 22, 2026)."
       - title: "C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models"
         date: "2023"
-        publisher: NeurIPS 2023
+        publisher: "NeurIPS 2023"
         url: https://arxiv.org/abs/2305.08322
-        summary:
-          Yuzhen Huang, Yuzhuo Bai, Zhihao Zhu, Junlei Zhang, Jinghan Zhang, Tangjun Su, **Junteng Liu**, Chuancheng Lv, Yikai Zhang, Jiayi Lei, Yao
-          Fu, Maosong Sun, Junxian He
+        summary: "Yuzhen Huang, Yuzhuo Bai, Zhihao Zhu, Junlei Zhang, Jinghan Zhang, Tangjun Su, **Junteng Liu**, Chuancheng Lv, Yikai Zhang, Jiayi Lei, Yao Fu, Maosong Sun, Junxian He. [Code](https://github.com/hkust-nlp/ceval). [Citations: 1,000+](https://scholar.google.com/scholar?hl=en&cites=9525037164026157781,11111808469063226646,4903983458894953004) · [GitHub stars: 1.8k+](https://github.com/hkust-nlp/ceval) (Oct 22, 2026)."
     Awards:
       - title: Zhiyuan Honor Scholarship
         date: 2020–2024

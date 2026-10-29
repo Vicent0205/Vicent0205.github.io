@@ -7,7 +7,7 @@ nav: true
 nav_order: 2
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}?v=20261013-toolbar">
+<link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}?v=20261029">
 
 <div class="publication-explorer" data-publications>
   <div class="publication-tools" data-publication-tools hidden>
@@ -22,10 +22,10 @@ nav_order: 2
         <select data-publication-year><option value="">All years</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option></select>
         <svg class="publication-select-arrow" aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m4 6 4 4 4-4"></path></svg>
       </label>
-      <p class="publication-count" data-publication-count role="status" aria-live="polite">12 publications</p>
+      <p class="publication-count" data-publication-count role="status" aria-live="polite">{{ site.data.publications.size }} publications</p>
     </div>
   </div>
-  <p class="publication-note">* Equal contribution.</p>
+  <p class="publication-note">* Equal contribution. Selected impact metrics: Google Scholar / GitHub, October 22, 2026.</p>
   <div class="publication-list">
     {% assign publication_years = site.data.publications | group_by: 'year' | sort: 'name' | reverse %}
     {% for publication_year in publication_years %}
@@ -39,8 +39,14 @@ nav_order: 2
             <h3 id="paper-{{ paper.id }}"><a href="{{ paper.paper }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a></h3>
             <div class="publication-authors" id="authors-{{ paper.id }}">{{ paper.authors | markdownify | remove: '<p>' | remove: '</p>' }}</div>
             <button class="publication-authors-toggle" type="button" data-authors-toggle aria-expanded="false" aria-controls="authors-{{ paper.id }}" hidden>Show all authors</button>
+            {% if paper.note %}<div class="publication-impact">{{ paper.note | markdownify }}</div>{% endif %}
+            {% if paper.metrics %}
+              <div class="publication-metrics" aria-label="Selected impact metrics as of October 22, 2026">
+                {% for metric in paper.metrics %}<a href="{{ metric.url | escape }}" target="_blank" rel="noopener noreferrer">{{ metric.label }}</a>{% endfor %}
+              </div>
+            {% endif %}
             <div class="publication-links" aria-label="Resources for {{ paper.title | escape }}">
-              <a href="{{ paper.paper }}" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 2.5h6l4 4v11H5z"></path><path d="M11 2.5v4h4M7.5 10h5M7.5 13h5"></path></svg>Paper</a>
+              <a href="{{ paper.paper }}" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 2.5h6l4 4v11H5z"></path><path d="M11 2.5v4h4M7.5 10h5M7.5 13h5"></path></svg>{{ paper.resource_label | default: 'Paper' }}</a>
               {% if paper.code %}<a href="{{ paper.code }}" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="m6 5-5 5 5 5m8-10 5 5-5 5m-2-12-4 14"></path></svg>Code</a>{% endif %}
             </div>
           </div>
